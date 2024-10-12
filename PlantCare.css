@@ -1,0 +1,39 @@
+/* PlantCard.css */
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the column width as needed */
+    gap: 40px; /* Adjust the gap between cards */
+  }
+  @media only screen and (max-width: 600px) {
+    /* Plant grid styles for mobile */
+    .plant-card {
+      width: 100%;
+      
+    }}
+  .plant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd8d8; /* Set the background color */
+  padding: 15px; /* Add some padding for better visual separation */
+  }
+  
+  .plant-card ion-card {
+    width: 100%; /* Ensure the card takes up the full width of its container */
+  }
+  
+  .plant-card ion-img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+  .plant-card ion-card-header {
+    color: #fafafa; /* Set the color of the plant name */
+    
+  }
+  .plant-care-title{
+    color: rgb(251, 251, 251);
+    font-size: large;
+  }
+  
